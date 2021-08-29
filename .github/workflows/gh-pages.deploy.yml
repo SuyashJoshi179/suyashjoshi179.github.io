@@ -11,9 +11,6 @@ jobs:
 
     runs-on: ubuntu-latest
 
-    env:
-      NEXT_PUBLIC_BASE_PATH: /portfolio
-
     strategy:
       matrix:
         node-version: [16.x]
