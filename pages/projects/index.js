@@ -1,33 +1,25 @@
-import { Button, Card, Chip, Stack, ThemeProvider, CardMedia, Typography, CardContent, CardActions, Container, makeStyles, Box } from '@material-ui/core';
-import SpeedDial from '@mui/material/SpeedDial';
-import SpeedDialIcon from '@mui/material/SpeedDialIcon';
-import SpeedDialAction from '@mui/material/SpeedDialAction';
-import HomeIcon from '@mui/icons-material/Home';
+import { Box, Button, Card, CardActions, CardContent, CardMedia, Stack, ThemeProvider, Typography } from '@material-ui/core';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
-import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
-import FunctionsIcon from '@mui/icons-material/Functions';
-import ContactPageIcon from '@mui/icons-material/ContactPage';
-import MenuOpenIcon from '@mui/icons-material/MenuOpen';
 import CloseIcon from '@mui/icons-material/Close';
+import ContactPageIcon from '@mui/icons-material/ContactPage';
+import FunctionsIcon from '@mui/icons-material/Functions';
+import HomeIcon from '@mui/icons-material/Home';
+import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
+import MenuOpenIcon from '@mui/icons-material/MenuOpen';
+import SpeedDial from '@mui/material/SpeedDial';
+import SpeedDialAction from '@mui/material/SpeedDialAction';
+import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import Head from 'next/head';
-import { useRouter } from 'next/router';
 import { theme, urls } from '../../public/toggles';
 import styles from '../../styles/Projects.module.css';
 
 export default function Home() {
-    const router = useRouter()
-    const handleClick = (href) => {
-        router.push(href, href, {
-            shallow: true,
-        });
-    };
-    
     const actions = [
-        { icon: <HomeIcon />, name: 'Home' },
-        { icon: <AccountTreeIcon />, name: 'Projects' },
-        { icon: <FunctionsIcon />, name: 'Skills' },
-        { icon: <LocalLibraryIcon />, name: 'Education' },
-        { icon: <ContactPageIcon />, name: 'Contact' },
+        { icon: <HomeIcon />, name: 'Home', link: '/' },
+        { icon: <AccountTreeIcon />, name: 'Projects', link: '/projects' },
+        { icon: <FunctionsIcon />, name: 'Skills', link: '/skills' },
+        { icon: <LocalLibraryIcon />, name: 'Education', link: '/education' },
+        { icon: <ContactPageIcon />, name: 'Contact', link: '/contact' },
     ];
 
     return (
@@ -56,6 +48,7 @@ export default function Home() {
                                     key={action.name}
                                     icon={action.icon}
                                     tooltipTitle={action.name}
+                                    href={action.link}
                                 />
                             ))}
                         </SpeedDial>
@@ -79,51 +72,50 @@ export default function Home() {
                                 </Typography>
                             </CardContent>
                             <CardActions className={styles.cardcont}>
-                                <Button size="small" onClick={() => handleClick('projects/crypt')}>Website</Button>
-                                <Button size="small" onClick={() => handleClick('projects')}>GitHub</Button>
-                                <Button size="small" onClick={() => handleClick('projects')}>Learn More</Button>
+                                <Button size="small" target="_blank" rel='noreferrer' href={urls.crypt.website} >Website</Button>
+                                <Button size="small" target="_blank" rel='noreferrer' href={urls.crypt.github} >GitHub</Button>
+                                <Button size="small" href='projects/crypt' >Learn More</Button>
                             </CardActions>
                         </Card>
                         <Card sx={{ maxWidth: 700 }} className={styles.card}>
                             <CardMedia
                                 component="img"
                                 width="100%"
-                                image="/Projects/Crypt.png"
-                                alt="Crypt"
+                                image="/Projects/Inquizitive.png"
+                                alt="Inquizitive"
                             />
                             <CardContent className={styles.cardcont}>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Crypt
+                                    Inquizitive
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    Crypt is a cryptocurrency website, where you can check out latest cryptocurrencies, their current rates, historical rates and their trend. Which helps you to predict their future, so you can invest your money wisely.
+                                    Inquizitive is an event/competition in Credenz Tech Dayz (CTD) organised by PICT IEEE Student Branch. It is an online quiz competition where students compete by answering questions.
                                 </Typography>
                             </CardContent>
                             <CardActions className={styles.cardcont}>
-                                <Button size="small" onClick={() => handleClick('projects/crypt')}>Website</Button>
-                                <Button size="small" onClick={() => handleClick('projects')}>GitHub</Button>
-                                <Button size="small" onClick={() => handleClick('projects')}>Learn More</Button>
+                                <Button size="small" target="_blank" rel='noreferrer' href={urls.inquizitive.github} >GitHub</Button>
+                                <Button size="small" href='projects/crypt' >Learn More</Button>
                             </CardActions>
                         </Card>
                         <Card sx={{ maxWidth: 700 }} className={styles.card}>
                             <CardMedia
                                 component="img"
                                 width="100%"
-                                image="/Projects/Crypt.png"
+                                image="/Projects/Portfolio.png"
                                 alt="Crypt"
                             />
                             <CardContent className={styles.cardcont}>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Crypt
+                                    Portfolio
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    Crypt is a cryptocurrency website, where you can check out latest cryptocurrencies, their current rates, historical rates and their trend. Which helps you to predict their future, so you can invest your money wisely.
+                                    A portfolio website provides professional information about an individual or a company and presents a showcase of their work. This website shows my work.
                                 </Typography>
                             </CardContent>
                             <CardActions className={styles.cardcont}>
-                                <Button size="small" onClick={() => handleClick('projects/crypt')}>Website</Button>
-                                <Button size="small" onClick={() => handleClick('projects')}>GitHub</Button>
-                                <Button size="small" onClick={() => handleClick('projects')}>Learn More</Button>
+                                <Button size="small" target="_blank" rel='noreferrer' href={urls.portfolio.website} >Website</Button>
+                                <Button size="small" target="_blank" rel='noreferrer' href={urls.portfolio.github} >GitHub</Button>
+                                <Button size="small" href='projects/portfolio' >Learn More</Button>
                             </CardActions>
                         </Card>
                     </Stack>
