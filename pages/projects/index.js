@@ -60,8 +60,8 @@ export default function Home() {
                             <CardMedia
                                 component="img"
                                 width="100%"
-                                image="/Projects/Crypt.png"
-                                alt="Crypt"
+                                image="/Projects/crypt.png"
+                                alt="Crypt Home"
                             />
                             <CardContent className={styles.cardcont}>
                                 <Typography gutterBottom variant="h5" component="div">
@@ -81,8 +81,8 @@ export default function Home() {
                             <CardMedia
                                 component="img"
                                 width="100%"
-                                image="/Projects/Inquizitive.png"
-                                alt="Inquizitive"
+                                image="/Projects/inquizitive.png"
+                                alt="Inquizitive Home"
                             />
                             <CardContent className={styles.cardcont}>
                                 <Typography gutterBottom variant="h5" component="div">
@@ -101,8 +101,8 @@ export default function Home() {
                             <CardMedia
                                 component="img"
                                 width="100%"
-                                image="/Projects/Portfolio.png"
-                                alt="Crypt"
+                                image="/Projects/portfolio.png"
+                                alt="Portfolio Home"
                             />
                             <CardContent className={styles.cardcont}>
                                 <Typography gutterBottom variant="h5" component="div">
