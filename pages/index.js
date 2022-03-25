@@ -28,9 +28,9 @@ export default function Home() {
           </p>
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={3}>
             <Button variant="outlined" href='projects' >PROJECTS</Button>
+            <Button variant="outlined" href='contributions' >CONTRIBUTIONS</Button>
             <Button variant="outlined" href='skills' >SKILLS</Button>
             <Button variant="outlined" href='education' >EDUCATION</Button>
-            <Button variant="outlined" href='contact' >CONTACT</Button>
           </Stack>
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} className={styles.links} >
             <Stack direction="row" spacing={2} >
