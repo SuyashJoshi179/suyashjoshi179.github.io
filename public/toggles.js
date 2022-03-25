@@ -20,6 +20,12 @@ export const urls = {
         website: '/',
         github: 'https://github.com/SuyashJoshi179/suyashjoshi179.github.io',
     },
+    cleancss: {
+        website: 'https://clean-css.github.io/',
+        github: 'https://github.com/clean-css/clean-css',
+        issue: 'https://github.com/clean-css/clean-css/issues/1180',
+        pr: 'https://github.com/clean-css/clean-css/pull/1182',
+    },
     tools: {
         cpp: 'https://isocpp.org/',
         python: 'https://www.python.org/',

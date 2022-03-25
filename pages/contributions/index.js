@@ -33,7 +33,7 @@ export default function Home() {
                 </Head>
                 <div className={styles.top}>
                     <Box className={styles.title}>
-                        Projects
+                        Contributions
                     </Box>
                     <div>
                         <SpeedDial
@@ -60,62 +60,23 @@ export default function Home() {
                             <CardMedia
                                 component="img"
                                 width="100%"
-                                image="/Projects/crypt.png"
-                                alt="Crypt Home"
+                                image={"/Contributions/cleancss.svg"}
+                                alt="Clean CSS Home"
                             />
                             <CardContent className={styles.cardcont}>
                                 <Typography gutterBottom variant="h5" component="div">
-                                    Crypt
+                                    Clean CSS
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    Crypt is a cryptocurrency website, where you can check out latest cryptocurrencies, their current rates, historical rates and their trend. Which helps you to predict their future, so you can invest your money wisely.
+                                    clean-css is a fast and efficient CSS optimizer for Node.js platform and any modern browser. According to <a style={{ color: "#007FFF", textDecoration: "underline" }} href='http://goalsmashers.github.io/css-minification-benchmark/'>tests</a> it is one of the best available.
                                 </Typography>
                             </CardContent>
                             <CardActions className={styles.cardcont}>
-                                <Button size="small" target="_blank" rel='noreferrer' href={urls.crypt.website} >Website</Button>
-                                <Button size="small" target="_blank" rel='noreferrer' href={urls.crypt.github} >GitHub</Button>
+                                <Button size="small" target="_blank" rel='noreferrer' href={urls.cleancss.website} >Website</Button>
+                                <Button size="small" target="_blank" rel='noreferrer' href={urls.cleancss.github} >GitHub</Button>
+                                <Button size="small" target="_blank" rel='noreferrer' href={urls.cleancss.issue} >Issue</Button>
+                                <Button size="small" target="_blank" rel='noreferrer' href={urls.cleancss.pr} >PR</Button>
                                 {/* <Button size="small" href='projects/crypt' >Learn More</Button> */}
-                            </CardActions>
-                        </Card>
-                        <Card sx={{ maxWidth: 700 }} className={styles.card}>
-                            <CardMedia
-                                component="img"
-                                width="100%"
-                                image="/Projects/inquizitive.png"
-                                alt="Inquizitive Home"
-                            />
-                            <CardContent className={styles.cardcont}>
-                                <Typography gutterBottom variant="h5" component="div">
-                                    Inquizitive
-                                </Typography>
-                                <Typography variant="body2" color="text.secondary">
-                                    Inquizitive is an event/competition in Credenz Tech Dayz (CTD) organised by PICT IEEE Student Branch. It is an online quiz competition where students compete by answering questions.
-                                </Typography>
-                            </CardContent>
-                            <CardActions className={styles.cardcont}>
-                                <Button size="small" target="_blank" rel='noreferrer' href={urls.inquizitive.github} >GitHub</Button>
-                                {/* <Button size="small" href='projects/crypt' >Learn More</Button> */}
-                            </CardActions>
-                        </Card>
-                        <Card sx={{ maxWidth: 700 }} className={styles.card}>
-                            <CardMedia
-                                component="img"
-                                width="100%"
-                                image="/Projects/portfolio.png"
-                                alt="Portfolio Home"
-                            />
-                            <CardContent className={styles.cardcont}>
-                                <Typography gutterBottom variant="h5" component="div">
-                                    Portfolio
-                                </Typography>
-                                <Typography variant="body2" color="text.secondary">
-                                    A portfolio website provides professional information about an individual or a company and presents a showcase of their work. This website shows my work.
-                                </Typography>
-                            </CardContent>
-                            <CardActions className={styles.cardcont}>
-                                <Button size="small" target="_blank" rel='noreferrer' href={urls.portfolio.website} >Website</Button>
-                                <Button size="small" target="_blank" rel='noreferrer' href={urls.portfolio.github} >GitHub</Button>
-                                {/* <Button size="small" href='projects/portfolio' >Learn More</Button> */}
                             </CardActions>
                         </Card>
                     </Stack>

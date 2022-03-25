@@ -4,6 +4,7 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-bottom: 50px;
 }
 
 .footer {
@@ -12,7 +13,10 @@
 	border-top: 1px solid #eaeaea;
 	display: flex;
 	justify-content: center;
-	align-items: flex-start;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+	background-color: white;
 	font-size: large;
 }
 
