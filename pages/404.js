@@ -1,5 +1,6 @@
 import { Link, ThemeProvider } from '@material-ui/core';
 import Head from 'next/head';
+import Script from 'next/script';
 import { theme } from '../public/toggles';
 import styles from '../styles/Home.module.css';
 
@@ -15,11 +16,10 @@ export default function Home() {
         </Head>
 
         <main className={styles.main}>
-          <div className={styles.title}>
-          Coming Soon..
-          </div>
+          <Script src="/lottie-player.js" strategy='beforeInteractive' />
+          <lottie-player src="/under_construction.json" background="transparent" speed="1" style={{ width: "70vw", height: "70vh" }} loop autoplay></lottie-player>
           <br />
-          <Link href ='/' >Go back to home</Link>
+          <Link href='/' >Go back to home</Link>
         </main>
       </div>
     </ThemeProvider>
