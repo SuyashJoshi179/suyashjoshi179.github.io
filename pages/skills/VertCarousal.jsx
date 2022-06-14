@@ -88,13 +88,13 @@ const VerticalCarousel = ({ data, dir, dur }) => {
                       visible:
                         Math.abs(determinePlacement(i)) <= visibleStyleThreshold
                     })}
-                    key={item.id}
+                    key={item.name}
                     style={{
                       transform: `translateY(${determinePlacement(i)}px)`,
                       borderColor: item.color
                     }}
                   >
-                    <Image src={item.url} alt={item.name} width="100%" height={70} loading="eager" />
+                    <Image src={item.url} alt={item.name} width="100%" height={70} loading="eager" unoptimized />
                     <div style={{ fontSize: "0.9rem", color: item.color }}>{item.name}</div>
                   </button>
                 ))}
