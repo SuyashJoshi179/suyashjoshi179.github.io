@@ -66,10 +66,10 @@ export default function Home() {
                     </div>
                     <Stack direction='row'>
                         <VerticalCarousel data={rotateArray(data.slides, 0)} dir="next" dur={0} />
-                        <VerticalCarousel data={rotateArray(data.slides, 8).reverse()} dir="prev" dur={100} />
-                        <VerticalCarousel data={rotateArray(data.slides, 16)} dir="next" dur={200} />
-                        <VerticalCarousel data={rotateArray(data.slides, 24).reverse()} dir="prev" dur={300} />
-                        <VerticalCarousel data={rotateArray(data.slides, 32)} dir="next" dur={400} />
+                        <VerticalCarousel data={rotateArray(data.slides, 8).reverse()} dir="prev" dur={0} />
+                        <VerticalCarousel data={rotateArray(data.slides, 16)} dir="next" dur={0} />
+                        <VerticalCarousel data={rotateArray(data.slides, 24).reverse()} dir="prev" dur={0} />
+                        <VerticalCarousel data={rotateArray(data.slides, 32)} dir="next" dur={0} />
                     </Stack>
                 </main>
 
