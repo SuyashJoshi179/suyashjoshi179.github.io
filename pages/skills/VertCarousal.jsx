@@ -64,7 +64,7 @@ const VerticalCarousel = ({ data, dir, dur }) => {
   useEffect(() => {
     setTimeout(() => {
         handleClick(dir);
-        setLoop(setInterval(handleClick, 2400, dir));
+        setLoop(setInterval(handleClick, 4000, dir));
     }, dur);
   
     return () => {
@@ -94,7 +94,7 @@ const VerticalCarousel = ({ data, dir, dur }) => {
                       borderColor: item.color
                     }}
                   >
-                    <Image src={item.url} alt={item.name} width="100%" height={70} />
+                    <Image src={item.url} alt={item.name} width="100%" height={70} loading="eager" />
                     <div style={{ fontSize: "0.9rem", color: item.color }}>{item.name}</div>
                   </button>
                 ))}
@@ -107,9 +107,8 @@ const VerticalCarousel = ({ data, dir, dur }) => {
   );
 };
 
-VerticalCarousel.propTypes = {
-  data: PropTypes.array.isRequired,
-  leadingText: PropTypes.string.isRequired
+VerticalCarousel.defaultProps = {
+  data: []
 };
 
 export default VerticalCarousel;
