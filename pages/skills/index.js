@@ -95,7 +95,7 @@ export default function Home() {
                             </CardContent>
                         </Card>
                         <Card className={styles.card}>
-                            <CardContent sx={{ order: 2, padding: 0, width: "50%", height: "50%" }} >
+                            <CardContent sx={{ order: 2, padding: 0 }} >
                                 <Script src="/lottie-player.js" strategy='beforeInteractive' />
                                 <lottie-player src="/cloud.json" background="transparent" speed="1" loop autoplay></lottie-player>
                             </CardContent>
