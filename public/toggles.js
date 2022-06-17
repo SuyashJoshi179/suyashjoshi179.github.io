@@ -64,4 +64,7 @@ export const theme = createTheme({
             main: '#007FFF',
         },
     },
+    typography: {
+        fontFamily: 'Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+    }
 });
