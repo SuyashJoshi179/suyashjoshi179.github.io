@@ -1,195 +1,325 @@
 {
-    "slides": [
-      {
-        "name": "React",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
-        "color": "#61DAFB"
-      },
-      {
-        "name": "Arduino",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg",
-        "color": "#00979C"
-      },
-      {
-        "name": "Bash",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-plain.svg",
-        "color": "black"
-      },
-      {
-        "name": "Bootstrap",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
-        "color": "#9013fe"
-      },
-      {
-        "name": "C++",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
-        "color": "#D26383"
-      },
-      {
-        "name": "CSS",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
-        "color": "#1572B6"
-      },
-      {
-        "name": "D3.js",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-original.svg",
-        "color": "#f9a03c"
-      },
-      {
-        "name": "docker",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
-        "color": "#3A4D54"
-      },
-      {
-        "name": "django",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
-        "color": "#092E20"
-      },
-      {
-        "name": "Express",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
-        "color": "black"
-      },
-      {
-        "name": "Firebase",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
-        "color": "#f58220"
-      },
-      {
-        "name": "GCC",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gcc/gcc-original.svg",
-        "color": "#ffd0ac"
-      },
-      {
-        "name": "GitHub",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
-        "color": "black"
-      },
-      {
-        "name": "heroku",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg",
-        "color": "#6762A6"
-      },
-      {
-        "name": "HTML",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
-        "color": "#E44D26"
-      },
-      {
-        "name": "JavaScript",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
-        "color": "black"
-      },
-      {
-        "name": "Jenkins",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg",
-        "color": "black"
-      },
-      {
-        "name": "Jupyter",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg",
-        "color": "black"
-      },
-      {
-        "name": "Kaggle",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kaggle/kaggle-original.svg",
-        "color": "#20beff"
-      },
-      {
-        "name": "kubernetes",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
-        "color": "#486bb3"
-      },
-      {
-        "name": "LaTeX",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg",
-        "color": "black"
-      },
-      {
-        "name": "MaterialUI",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
-        "color": "#1FA6CA"
-      },
-      {
-        "name": "Markdown",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg",
-        "color": "black"
-      },
-      {
-        "name": "mongoDB",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
-        "color": "#439934"
-      },
-      {
-        "name": "MySQL",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg",
-        "color": "#00618A"
-      },
-      {
-        "name": "NextJS",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
-        "color": "black"
-      } ,
-      {
-        "name": "NodeJS",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
-        "color": "#83CD29"
-      } ,
-      {
-        "name": "NPM",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
-        "color": "#cb3837"
-      } ,
-      {
-        "name": "NumPy",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg",
-        "color": "black"
-      } ,
-      {
-        "name": "OpenGL",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opengl/opengl-original.svg",
-        "color": "#5586A4"
-      } ,
-      {
-        "name": "pandas",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg",
-        "color": "#130754"
-      } ,
-      {
-        "name": "python",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
-        "color": "#306998"
-      } ,
-      {
-        "name": "Redux",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
-        "color": "#764abc"
-      } ,
-      {
-        "name": "SSH",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ssh/ssh-original.svg",
-        "color": "black"
-      } ,
-      {
-        "name": "TensorFlow",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
-        "color": "#ff6f00"
-      } ,
-      {
-        "name": "Vim",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg",
-        "color": "#019833"
-      } ,
-      {
-        "name": "VS Code",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
-        "color": "#3c99d4"
-      } ,
-      {
-        "name": "Yarn",
-        "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original.svg",
-        "color": "#2c8ebb"
-      }
-    ]
-  }
-  
+  "slides": [
+    {
+      "name": "React",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "color": "#61DAFB",
+      "domain": [
+        "frontend"
+      ]
+    },
+    {
+      "name": "Arduino",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg",
+      "color": "#00979C",
+      "domain": [
+        "other"
+      ]
+    },
+    {
+      "name": "Bash",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-plain.svg",
+      "color": "black",
+      "domain": [
+        "devops"
+      ]
+    },
+    {
+      "name": "Bootstrap",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+      "color": "#9013fe",
+      "domain": [
+        "frontend"
+      ]
+    },
+    {
+      "name": "C++",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+      "color": "#D26383",
+      "domain": [
+        "programming"
+      ]
+    },
+    {
+      "name": "CSS",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      "color": "#1572B6",
+      "domain": [
+        "frontend"
+      ]
+    },
+    {
+      "name": "D3.js",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-original.svg",
+      "color": "#f9a03c",
+      "domain": [
+        "frontend"
+      ]
+    },
+    {
+      "name": "docker",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+      "color": "#3A4D54",
+      "domain": [
+        "devops"
+      ]
+    },
+    {
+      "name": "django",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
+      "color": "#092E20",
+      "domain": [
+        "backend"
+      ]
+    },
+    {
+      "name": "Express",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+      "color": "black",
+      "domain": [
+        "backend"
+      ]
+    },
+    {
+      "name": "Firebase",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+      "color": "#f58220",
+      "domain": [
+        "cloud"
+      ]
+    },
+    {
+      "name": "GCC",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gcc/gcc-original.svg",
+      "color": "#ffd0ac",
+      "domain": [
+        "programming"
+      ]
+    },
+    {
+      "name": "GitHub",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      "color": "black",
+      "domain": [
+        "devops"
+      ]
+    },
+    {
+      "name": "heroku",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg",
+      "color": "#6762A6",
+      "domain": [
+        "cloud"
+      ]
+    },
+    {
+      "name": "HTML",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      "color": "#E44D26",
+      "domain": [
+        "frontend"
+      ]
+    },
+    {
+      "name": "JavaScript",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      "color": "black",
+      "domain": [
+        "frontend"
+      ]
+    },
+    {
+      "name": "Jenkins",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg",
+      "color": "black",
+      "domain": [
+        "devops"
+      ]
+    },
+    {
+      "name": "Jupyter",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg",
+      "color": "black",
+      "domain": [
+        "ml"
+      ]
+    },
+    {
+      "name": "Kaggle",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kaggle/kaggle-original.svg",
+      "color": "#20beff",
+      "domain": [
+        "ml"
+      ]
+    },
+    {
+      "name": "kubernetes",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
+      "color": "#486bb3",
+      "domain": [
+        "devops"
+      ]
+    },
+    {
+      "name": "LaTeX",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg",
+      "color": "black",
+      "domain": [
+        "other"
+      ]
+    },
+    {
+      "name": "MaterialUI",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
+      "color": "#1FA6CA",
+      "domain": [
+        "frontend"
+      ]
+    },
+    {
+      "name": "Markdown",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg",
+      "color": "black",
+      "domain": [
+        "other"
+      ]
+    },
+    {
+      "name": "mongoDB",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      "color": "#439934",
+      "domain": [
+        "database"
+      ]
+    },
+    {
+      "name": "MySQL",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg",
+      "color": "#00618A",
+      "domain": [
+        "database"
+      ]
+    },
+    {
+      "name": "NextJS",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+      "color": "black",
+      "domain": [
+        "frontend"
+      ]
+    },
+    {
+      "name": "NodeJS",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      "color": "#83CD29",
+      "domain": [
+        "backend"
+      ]
+    },
+    {
+      "name": "NPM",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
+      "color": "#cb3837",
+      "domain": [
+        "backend"
+      ]
+    },
+    {
+      "name": "NumPy",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg",
+      "color": "black",
+      "domain": [
+        "ml"
+      ]
+    },
+    {
+      "name": "OpenGL",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opengl/opengl-original.svg",
+      "color": "#5586A4",
+      "domain": [
+        "other"
+      ]
+    },
+    {
+      "name": "pandas",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg",
+      "color": "#130754",
+      "domain": [
+        "ml"
+      ]
+    },
+    {
+      "name": "python",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      "color": "#306998",
+      "domain": [
+        "ml",
+        "programming"
+      ]
+    },
+    {
+      "name": "Redux",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+      "color": "#764abc",
+      "domain": [
+        "frontend"
+      ]
+    },
+    {
+      "name": "SSH",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ssh/ssh-original.svg",
+      "color": "black",
+      "domain": [
+        "devops"
+      ]
+    },
+    {
+      "name": "TensorFlow",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+      "color": "#ff6f00",
+      "domain": [
+        "ml"
+      ]
+    },
+    {
+      "name": "Vim",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg",
+      "color": "#019833",
+      "domain": [
+        "other"
+      ]
+    },
+    {
+      "name": "VS Code",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+      "color": "#3c99d4",
+      "domain": [
+        "other"
+      ]
+    },
+    {
+      "name": "Yarn",
+      "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original.svg",
+      "color": "#2c8ebb",
+      "domain": [
+        "backend"
+      ]
+    },
+    {
+      "name": "Postman",
+      "url": "/postman.svg",
+      "color": "#FF6C37",
+      "domain": [
+        "backend"
+      ]
+    },
+    {
+      "name": "Swagger",
+      "url": "/swagger.svg",
+      "color": "#173647",
+      "domain": [
+        "backend"
+      ]
+    }
+  ]
+}
