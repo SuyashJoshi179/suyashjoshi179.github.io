@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ Created by Suyash Joshi
+-->
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <url>
+    <loc>
+      https://suyashjoshi.me
+    </loc>
+  </url>
+  <url>
+    <loc>
+      https://suyashjoshi.me/projects
+    </loc>
+  </url>
+  <url>
+    <loc>
+      https://suyashjoshi.me/contributions
+    </loc>
+  </url>
+  <url>
+    <loc>
+      https://suyashjoshi.me/skills
+    </loc>
+  </url>
+  <url>
+    <loc>
+      https://suyashjoshi.me/education
+    </loc>
+  </url>
+</urlset>
