@@ -14,7 +14,7 @@ export default function Home() {
         <Head>
           <title>Suyash Joshi | Portfolio</title>
           <meta name="description" content="Suyash Joshi's Portfolio" />
-          <link rel="icon" href="/favicon.ico" />
+          <link rel="icon" href="/Logo.svg" />
           <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
         </Head>
 
@@ -24,7 +24,7 @@ export default function Home() {
           </div>
 
           <p className={styles.description}>
-            A Full Stack developer and Machine Learning enthusiast!
+            A Full Stack developer and Problem Solver
           </p>
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={3}>
             <Button variant="outlined" href='projects' >PROJECTS</Button>
