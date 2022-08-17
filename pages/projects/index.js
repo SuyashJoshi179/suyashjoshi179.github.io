@@ -28,7 +28,7 @@ export default function Home() {
                 <Head>
                     <title>Suyash Joshi | Projects</title>
                     <meta name="description" content="Suyash Joshi's Portfolio" />
-                    <link rel="icon" href="/favicon.ico" />
+                    <link rel="icon" href="/Logo.svg" />
                     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
                 </Head>
                 <div className={styles.top}>
