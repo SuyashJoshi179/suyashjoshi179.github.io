@@ -87,7 +87,7 @@ export default function Home() {
                                 </Typography>
                                 {data.slides.filter(i => i.domain.includes("frontend")).map(i => (
                                     <Tooltip key={i.name} title={i.name}>
-                                        <IconButton sx={{ border: `1px solid ${i.color}`, padding: "10px", margin: "5px" }} aria-label={i.name} >
+                                        <IconButton sx={{ border: `1px solid ${i.color}`, padding: "10px", margin: "5px" }} aria-label={i.name} href={i.link} target="_blank" >
                                             <Image src={i.url} alt={i.name} width="30px" height="30px" loading="eager" unoptimized />
                                         </IconButton>
                                     </Tooltip>
@@ -108,7 +108,52 @@ export default function Home() {
                                 </Typography>
                                 {data.slides.filter(i => i.domain.includes("backend") || i.domain.includes("cloud") || i.domain.includes("database")).map(i => (
                                     <Tooltip key={i.name} title={i.name}>
-                                        <IconButton sx={{ border: `1px solid ${i.color}`, padding: "10px", margin: "5px" }} aria-label={i.name} >
+                                        <IconButton sx={{ border: `1px solid ${i.color}`, padding: "10px", margin: "5px" }} aria-label={i.name} href={i.link} target="_blank" >
+                                            <Image src={i.url} alt={i.name} width="30px" height="30px" loading="eager" unoptimized />
+                                        </IconButton>
+                                    </Tooltip>
+                                ))}
+                            </CardContent>
+                        </Card>
+                    </Stack>
+                    <Stack className={styles.cards}>
+                        <Divider textAlign="left" sx={{ marginTop: "5vh", fontSize: "1.7rem" }} >Competative Programming</Divider>
+                        <Card className={styles.card}>
+                            <CardContent sx={{ order: 1, padding: 0 }} >
+                                <Script src="/lottie-player.js" strategy='beforeInteractive' />
+                                <lottie-player src="/trending.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                            </CardContent>
+                            <CardContent className={styles.cardcont} sx={{ order: 2 }} >
+                                <Typography gutterBottom variant="h5" component="div">
+                                    Expert at CodeForces
+                                </Typography>
+                                <Typography gutterBottom variant="body2" color="text.secondary">
+                                    I have given multiple global contests on CodeForces platform ranking me Expert with max rating 1604.
+                                </Typography>
+                                {data.slides.filter(i => i.name === "CodeForces").map(i => (
+                                    <Tooltip key={i.name} title={i.name}>
+                                        <IconButton sx={{ border: `1px solid ${i.color}`, padding: "10px", margin: "5px" }} aria-label={i.name} href={i.link} target="_blank" >
+                                            <Image src={i.url} alt={i.name} width="30px" height="30px" loading="eager" unoptimized />
+                                        </IconButton>
+                                    </Tooltip>
+                                ))}
+                            </CardContent>
+                        </Card>
+                        <Card className={styles.card}>
+                            <CardContent sx={{ order: 2, padding: 0 }} >
+                                <Script src="/lottie-player.js" strategy='beforeInteractive' />
+                                <lottie-player src="/piechart.json" background="transparent" speed="1" loop autoplay></lottie-player>
+                            </CardContent>
+                            <CardContent className={styles.cardcont} sx={{ order: 1 }} >
+                                <Typography gutterBottom variant="h5" component="div">
+                                    5 Star on CodeChef
+                                </Typography>
+                                <Typography gutterBottom variant="body2" color="text.secondary">
+                                    Became 5 Star on CodeChef with max rating 2028 within 6 contests. Among top 3000 competative programmers globally on the platform. 
+                                </Typography>
+                                {data.slides.filter(i => i.name === "CodeChef").map(i => (
+                                    <Tooltip key={i.name} title={i.name}>
+                                        <IconButton sx={{ border: `1px solid ${i.color}`, padding: "10px", margin: "5px" }} aria-label={i.name} href={i.link} target="_blank" >
                                             <Image src={i.url} alt={i.name} width="30px" height="30px" loading="eager" unoptimized />
                                         </IconButton>
                                     </Tooltip>

@@ -3,6 +3,7 @@
     {
       "name": "React",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg",
+      "link": "https://reactjs.org",
       "color": "#61DAFB",
       "domain": [
         "frontend"
@@ -11,6 +12,7 @@
     {
       "name": "Arduino",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original.svg",
+      "link": "https://www.arduino.cc",
       "color": "#00979C",
       "domain": [
         "other"
@@ -19,6 +21,7 @@
     {
       "name": "Bash",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bash/bash-plain.svg",
+      "link": "https://www.gnu.org/software/bash",
       "color": "black",
       "domain": [
         "devops"
@@ -27,6 +30,7 @@
     {
       "name": "Bootstrap",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original.svg",
+      "link": "https://getbootstrap.com",
       "color": "#9013fe",
       "domain": [
         "frontend"
@@ -35,6 +39,7 @@
     {
       "name": "C++",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg",
+      "link": "https://isocpp.org",
       "color": "#D26383",
       "domain": [
         "programming"
@@ -43,6 +48,7 @@
     {
       "name": "CSS",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/CSS",
       "color": "#1572B6",
       "domain": [
         "frontend"
@@ -51,6 +57,7 @@
     {
       "name": "D3.js",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/d3js/d3js-original.svg",
+      "link": "https://d3js.org",
       "color": "#f9a03c",
       "domain": [
         "frontend"
@@ -59,6 +66,7 @@
     {
       "name": "docker",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg",
+      "link": "https://www.docker.com",
       "color": "#3A4D54",
       "domain": [
         "devops"
@@ -67,6 +75,7 @@
     {
       "name": "django",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/django/django-plain.svg",
+      "link": "https://www.djangoproject.com",
       "color": "#092E20",
       "domain": [
         "backend"
@@ -75,6 +84,7 @@
     {
       "name": "Express",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original.svg",
+      "link": "https://expressjs.com",
       "color": "black",
       "domain": [
         "backend"
@@ -83,6 +93,7 @@
     {
       "name": "Firebase",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg",
+      "link": "https://firebase.google.com",
       "color": "#f58220",
       "domain": [
         "cloud"
@@ -91,6 +102,7 @@
     {
       "name": "GCC",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gcc/gcc-original.svg",
+      "link": "https://gcc.gnu.org",
       "color": "#ffd0ac",
       "domain": [
         "programming"
@@ -99,6 +111,7 @@
     {
       "name": "GitHub",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg",
+      "link": "https://github.com",
       "color": "black",
       "domain": [
         "devops"
@@ -107,6 +120,7 @@
     {
       "name": "heroku",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain.svg",
+      "link": "https://www.heroku.com",
       "color": "#6762A6",
       "domain": [
         "cloud"
@@ -115,6 +129,7 @@
     {
       "name": "HTML",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/HTML",
       "color": "#E44D26",
       "domain": [
         "frontend"
@@ -123,6 +138,7 @@
     {
       "name": "JavaScript",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg",
+      "link": "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
       "color": "black",
       "domain": [
         "frontend"
@@ -131,6 +147,7 @@
     {
       "name": "Jenkins",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg",
+      "link": "https://www.jenkins.io",
       "color": "black",
       "domain": [
         "devops"
@@ -139,6 +156,7 @@
     {
       "name": "Jupyter",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jupyter/jupyter-original.svg",
+      "link": "https://jupyter.org",
       "color": "black",
       "domain": [
         "ml"
@@ -147,6 +165,7 @@
     {
       "name": "Kaggle",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kaggle/kaggle-original.svg",
+      "link": "https://www.kaggle.com",
       "color": "#20beff",
       "domain": [
         "ml"
@@ -155,6 +174,7 @@
     {
       "name": "kubernetes",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kubernetes/kubernetes-plain.svg",
+      "link": "https://kubernetes.io",
       "color": "#486bb3",
       "domain": [
         "devops"
@@ -163,6 +183,7 @@
     {
       "name": "LaTeX",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/latex/latex-original.svg",
+      "link": "https://www.latex-project.org",
       "color": "black",
       "domain": [
         "other"
@@ -171,6 +192,7 @@
     {
       "name": "MaterialUI",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/materialui/materialui-original.svg",
+      "link": "https://mui.com",
       "color": "#1FA6CA",
       "domain": [
         "frontend"
@@ -179,6 +201,7 @@
     {
       "name": "Markdown",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/markdown/markdown-original.svg",
+      "link": "https://daringfireball.net/projects/markdown",
       "color": "black",
       "domain": [
         "other"
@@ -187,6 +210,7 @@
     {
       "name": "mongoDB",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg",
+      "link": "https://www.mongodb.com",
       "color": "#439934",
       "domain": [
         "database"
@@ -195,6 +219,7 @@
     {
       "name": "MySQL",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg",
+      "link": "https://www.mysql.com",
       "color": "#00618A",
       "domain": [
         "database"
@@ -203,6 +228,7 @@
     {
       "name": "NextJS",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nextjs/nextjs-original.svg",
+      "link": "https://nextjs.org",
       "color": "black",
       "domain": [
         "frontend"
@@ -211,6 +237,7 @@
     {
       "name": "NodeJS",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg",
+      "link": "https://nodejs.org",
       "color": "#83CD29",
       "domain": [
         "backend"
@@ -219,6 +246,7 @@
     {
       "name": "NPM",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg",
+      "link": "https://www.npmjs.com",
       "color": "#cb3837",
       "domain": [
         "backend"
@@ -227,6 +255,7 @@
     {
       "name": "NumPy",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/numpy/numpy-original.svg",
+      "link": "https://numpy.org",
       "color": "black",
       "domain": [
         "ml"
@@ -235,6 +264,7 @@
     {
       "name": "OpenGL",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/opengl/opengl-original.svg",
+      "link": "https://www.opengl.org",
       "color": "#5586A4",
       "domain": [
         "other"
@@ -243,6 +273,7 @@
     {
       "name": "pandas",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/pandas/pandas-original.svg",
+      "link": "https://pandas.pydata.org",
       "color": "#130754",
       "domain": [
         "ml"
@@ -251,6 +282,7 @@
     {
       "name": "python",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg",
+      "link": "https://www.python.org",
       "color": "#306998",
       "domain": [
         "ml",
@@ -260,6 +292,7 @@
     {
       "name": "Redux",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg",
+      "link": "https://redux.js.org",
       "color": "#764abc",
       "domain": [
         "frontend"
@@ -268,6 +301,7 @@
     {
       "name": "SSH",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ssh/ssh-original.svg",
+      "link": "https://www.openssh.com",
       "color": "black",
       "domain": [
         "devops"
@@ -276,6 +310,7 @@
     {
       "name": "TensorFlow",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/tensorflow/tensorflow-original.svg",
+      "link": "https://www.tensorflow.org",
       "color": "#ff6f00",
       "domain": [
         "ml"
@@ -284,6 +319,7 @@
     {
       "name": "Vim",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vim/vim-original.svg",
+      "link": "https://www.vim.org",
       "color": "#019833",
       "domain": [
         "other"
@@ -292,6 +328,7 @@
     {
       "name": "VS Code",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg",
+      "link": "https://code.visualstudio.com",
       "color": "#3c99d4",
       "domain": [
         "other"
@@ -300,6 +337,7 @@
     {
       "name": "Yarn",
       "url": "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/yarn/yarn-original.svg",
+      "link": "https://yarnpkg.com",
       "color": "#2c8ebb",
       "domain": [
         "backend"
@@ -308,6 +346,7 @@
     {
       "name": "Postman",
       "url": "/postman.svg",
+      "link": "https://www.postman.com",
       "color": "#FF6C37",
       "domain": [
         "backend"
@@ -316,9 +355,28 @@
     {
       "name": "Swagger",
       "url": "/swagger.svg",
+      "link": "https://swagger.io",
       "color": "#173647",
       "domain": [
         "backend"
+      ]
+    },
+    {
+      "name": "CodeForces",
+      "url": "/codeforces.svg",
+      "link": "https://codeforces.com/profile/SuyashJoshi",
+      "color": "#2196F3",
+      "domain": [
+        "cp"
+      ]
+    },
+    {
+      "name": "CodeChef",
+      "url": "/codechef.svg",
+      "link": "https://www.codechef.com/users/suyash_joshi",
+      "color": "#4A352A",
+      "domain": [
+        "cp"
       ]
     }
   ]
