@@ -26,7 +26,7 @@ export default function Home() {
         <ThemeProvider theme={theme}>
             <div className={styles.container}>
                 <Head>
-                    <title>Suyash Joshi | Projects</title>
+                    <title>Suyash Joshi | Contributions</title>
                     <meta name="description" content="Suyash Joshi's Portfolio" />
                     <link rel="icon" href="/Logo.svg" />
                     <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
