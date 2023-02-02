@@ -58,7 +58,7 @@ export default function Home() {
                 </div>
                 <main className={styles.main} style={{ overflow: "hidden" }}>
                     <Stack className={styles.cards}>
-                        <Divider textAlign="left" sx={{ marginTop: "5vh", fontSize: "1.7rem" }} >Academics</Divider>
+                        <Divider textAlign="left" sx={{ marginTop: "5%", fontSize: "1.7rem" }} >Academics</Divider>
                         <Card className={styles.card}>
                             <CardContent sx={{ order: 1, padding: 2, textAlign: "center" }} >
                                 <Image src='/Education/pict.jpg' alt="PICT Logo" width="200%" height="200%" loading="eager" unoptimized />
@@ -121,7 +121,7 @@ export default function Home() {
                         </Card>
                     </Stack>
                     <Stack className={styles.cards}>
-                        <Divider textAlign="left" sx={{ marginTop: "5vh", fontSize: "1.7rem" }} >Courses</Divider>
+                        <Divider textAlign="left" sx={{ marginTop: "5%", fontSize: "1.7rem" }} >Courses</Divider>
                         <Card className={styles.card}>
                             <CardContent sx={{ order: 1, padding: 2, textAlign: "center" }} >
                                 <Image src='/Education/stanford.svg' alt="Stanford Logo" width="200%" height="200%" loading="eager" unoptimized />
