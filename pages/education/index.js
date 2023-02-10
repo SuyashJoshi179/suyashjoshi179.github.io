@@ -61,7 +61,7 @@ export default function Home() {
                         <Divider textAlign="left" sx={{ marginTop: "5vh", fontSize: "1.7rem" }} >Academics</Divider>
                         <Card className={styles.card}>
                             <CardContent sx={{ order: 1, padding: 2, textAlign: "center" }} >
-                                <Image src='/Education/pict.jpg' alt="PICT Logo" width="200%" height="200%" loading="eager" unoptimized />
+                                <Image src='/Education/pict.png' alt="PICT Logo" width="200%" height="200%" loading="eager" unoptimized />
                             </CardContent>
                             <CardContent className={styles.cardcont} sx={{ order: 2 }} >
                                 <Typography gutterBottom variant="h5" component="div">
@@ -204,7 +204,7 @@ export default function Home() {
                         </Card>
                         <Card className={styles.card}>
                             <CardContent sx={{ order: 1, padding: 2, textAlign: "center" }} >
-                                <Image src='/Education/pict.jpg' alt="PICT Logo" width="200%" height="200%" loading="eager" unoptimized />
+                                <Image src='/Education/pict.png' alt="PICT Logo" width="200%" height="200%" loading="eager" unoptimized />
                             </CardContent>
                             <CardContent className={styles.cardcont} sx={{ order: 2 }} >
                                 <Typography gutterBottom variant="h5" component="div">
