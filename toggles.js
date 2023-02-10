@@ -6,12 +6,17 @@ export const urls = {
     linkedin: 'https://www.linkedin.com/in/suyash-joshi/',
     email: 'mailto:suyash.joshi179@gmail.com',
     inquizitive: {
+        website: 'https://inquizitive.onrender.com/',
         github: 'https://github.com/credenz/Inquizitive-Frontend',
     },
     crypt: {
         website: 'https://crypt-web.web.app/',
         github: 'https://github.com/SuyashJoshi179/Crypt-Web',
-        proxy: 'https://cors-proxyserver.herokuapp.com/',
+        proxy: 'https://cors-proxy-go.onrender.com/',
+    },
+    corsproxygo: {
+        website: 'https://cors-proxy-go.onrender.com/',
+        github: 'https://github.com/SuyashJoshi179/cors-proxy-go',
     },
     bounce_ball: {
         github: 'https://github.com/SuyashJoshi179/Bouncing-Ball-Game',
