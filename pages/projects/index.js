@@ -93,6 +93,7 @@ export default function Home() {
                                 </Typography>
                             </CardContent>
                             <CardActions className={styles.cardcont}>
+                                <Button size="small" target="_blank" rel='noreferrer' href={urls.inquizitive.website} >Website</Button>
                                 <Button size="small" target="_blank" rel='noreferrer' href={urls.inquizitive.github} >GitHub</Button>
                                 {/* <Button size="small" href='projects/crypt' >Learn More</Button> */}
                             </CardActions>
@@ -115,6 +116,27 @@ export default function Home() {
                             <CardActions className={styles.cardcont}>
                                 <Button size="small" target="_blank" rel='noreferrer' href={urls.portfolio.website} >Website</Button>
                                 <Button size="small" target="_blank" rel='noreferrer' href={urls.portfolio.github} >GitHub</Button>
+                                {/* <Button size="small" href='projects/portfolio' >Learn More</Button> */}
+                            </CardActions>
+                        </Card>
+                        <Card sx={{ maxWidth: 700 }} className={styles.card}>
+                            <CardMedia
+                                component="img"
+                                width="100%"
+                                image="/Projects/corsproxygo.jpg"
+                                alt="Meme on CORS"
+                            />
+                            <CardContent className={styles.cardcont}>
+                                <Typography gutterBottom variant="h5" component="div">
+                                    CORS - Proxy - GO
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                    A fast CORS proxy server made using Go and Gin with support for origin whitelisting. Alternative to CORS Anywhere. Fast due to compiled nature of Go,&nbsp; Highly concurrencurrent due to efficient request handling of Gin framework.
+                                </Typography>
+                            </CardContent>
+                            <CardActions className={styles.cardcont}>
+                                <Button size="small" target="_blank" rel='noreferrer' href={urls.corsproxygo.website} >Website</Button>
+                                <Button size="small" target="_blank" rel='noreferrer' href={urls.corsproxygo.github} >GitHub</Button>
                                 {/* <Button size="small" href='projects/portfolio' >Learn More</Button> */}
                             </CardActions>
                         </Card>
