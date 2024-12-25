@@ -1,11 +1,11 @@
 import { Box, Button, Card, CardActions, CardContent, CardMedia, Stack, ThemeProvider, Typography } from '@material-ui/core';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import CloseIcon from '@mui/icons-material/Close';
-import FunctionsIcon from '@mui/icons-material/Functions';
 import HomeIcon from '@mui/icons-material/Home';
+import LightbulbOutlined from '@mui/icons-material/LightbulbOutlined';
 import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
-import PeopleIcon from '@mui/icons-material/People';
+import Work from '@mui/icons-material/Work';
 import SpeedDial from '@mui/material/SpeedDial';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
 import SpeedDialIcon from '@mui/material/SpeedDialIcon';
@@ -16,9 +16,9 @@ import styles from '../../styles/Projects.module.css';
 export default function Home() {
     const actions = [
         { icon: <HomeIcon />, name: 'Home', link: '/' },
+        { icon: <Work />, name: 'Experience', link: '/experience' },
+        { icon: <LightbulbOutlined />, name: 'Skills', link: '/skills' },
         { icon: <AccountTreeIcon />, name: 'Projects', link: '/projects' },
-        { icon: <PeopleIcon />, name: 'Contributions', link: '/contributions' },
-        { icon: <FunctionsIcon />, name: 'Skills', link: '/skills' },
         { icon: <LocalLibraryIcon />, name: 'Education', link: '/education' },
     ];
 
