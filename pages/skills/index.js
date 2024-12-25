@@ -20,9 +20,9 @@ import VerticalCarousel from './VertCarousal';
 export default function Home() {
     const actions = [
         { icon: <HomeIcon />, name: 'Home', link: '/' },
-        { icon: <AccountTreeIcon />, name: 'Projects', link: '/projects' },
-        { icon: <PeopleIcon />, name: 'Contributions', link: '/contributions' },
+        { icon: <PeopleIcon />, name: 'Experience', link: '/experience' },
         { icon: <FunctionsIcon />, name: 'Skills', link: '/skills' },
+        { icon: <AccountTreeIcon />, name: 'Projects', link: '/projects' },
         { icon: <LocalLibraryIcon />, name: 'Education', link: '/education' },
     ];
 

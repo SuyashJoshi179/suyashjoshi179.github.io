@@ -27,9 +27,9 @@ export default function Home() {
             A Full Stack developer and Problem Solver
           </p>
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={3}>
-            <Button variant="outlined" href='projects' >PROJECTS</Button>
-            <Button variant="outlined" href='contributions' >CONTRIBUTIONS</Button>
+            <Button variant="outlined" href='experience' >EXPERIENCE</Button>
             <Button variant="outlined" href='skills' >SKILLS</Button>
+            <Button variant="outlined" href='projects' >PROJECTS</Button>
             <Button variant="outlined" href='education' >EDUCATION</Button>
           </Stack>
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} className={styles.links} >

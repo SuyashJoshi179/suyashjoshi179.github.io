@@ -18,9 +18,9 @@ import styles from '../../styles/Education.module.css';
 export default function Home() {
     const actions = [
         { icon: <HomeIcon />, name: 'Home', link: '/' },
-        { icon: <AccountTreeIcon />, name: 'Projects', link: '/projects' },
-        { icon: <PeopleIcon />, name: 'Contributions', link: '/contributions' },
+        { icon: <PeopleIcon />, name: 'Experience', link: '/experience' },
         { icon: <FunctionsIcon />, name: 'Skills', link: '/skills' },
+        { icon: <AccountTreeIcon />, name: 'Projects', link: '/projects' },
         { icon: <LocalLibraryIcon />, name: 'Education', link: '/education' },
     ];
 
@@ -73,8 +73,8 @@ export default function Home() {
                                 <Typography variant="body2" color="text.secondary">
                                     <div>Savitribai Phule Pune University</div>
                                     <Stack justifyContent={{ xs: 'center', sm: 'space-between' }} spacing={2} className={styles.edustats} direction={{ xs: 'column', sm: 'row' }}>
-                                        <div>CGPA: 9.29/10</div>
-                                        <div>2019 - Present</div>
+                                        <div>CGPA: 9.23/10</div>
+                                        <div>2019 - 2023</div>
                                     </Stack>
                                 </Typography>
                             </CardContent>
