@@ -1,11 +1,11 @@
 import { Box, Card, CardContent, Divider, IconButton, Stack, ThemeProvider, Tooltip, Typography } from '@material-ui/core';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import CloseIcon from '@mui/icons-material/Close';
-import FunctionsIcon from '@mui/icons-material/Functions';
 import HomeIcon from '@mui/icons-material/Home';
+import LightbulbOutlined from '@mui/icons-material/LightbulbOutlined';
 import LocalLibraryIcon from '@mui/icons-material/LocalLibrary';
 import MenuOpenIcon from '@mui/icons-material/MenuOpen';
-import PeopleIcon from '@mui/icons-material/People';
+import Work from '@mui/icons-material/Work';
 import SpeedDial from '@mui/material/SpeedDial';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
 import SpeedDialIcon from '@mui/material/SpeedDialIcon';
@@ -20,8 +20,8 @@ import VerticalCarousel from './VertCarousal';
 export default function Home() {
     const actions = [
         { icon: <HomeIcon />, name: 'Home', link: '/' },
-        { icon: <PeopleIcon />, name: 'Experience', link: '/experience' },
-        { icon: <FunctionsIcon />, name: 'Skills', link: '/skills' },
+        { icon: <Work />, name: 'Experience', link: '/experience' },
+        { icon: <LightbulbOutlined />, name: 'Skills', link: '/skills' },
         { icon: <AccountTreeIcon />, name: 'Projects', link: '/projects' },
         { icon: <LocalLibraryIcon />, name: 'Education', link: '/education' },
     ];
@@ -72,7 +72,7 @@ export default function Home() {
                         <VerticalCarousel data={rotateArray(data.slides, 32)} dir="next" dur={0} />
                     </Stack>
                     <Stack className={styles.cards}>
-                        <Divider textAlign="left" sx={{ marginTop: "5vh", fontSize: "1.7rem" }} >Web Developement</Divider>
+                        <Divider textAlign="left" sx={{ marginTop: "5vh", fontSize: "1.7rem" }} >Software Developement</Divider>
                         <Card className={styles.card}>
                             <CardContent sx={{ order: 1, padding: 0 }} >
                                 <Script src="/lottie-player.js" strategy='beforeInteractive' />
@@ -104,7 +104,7 @@ export default function Home() {
                                     Backend Developement
                                 </Typography>
                                 <Typography gutterBottom variant="body2" color="text.secondary">
-                                    I develope robust, secure, scalable and highly functional backends that adhere to the REST architectural constraints.
+                                    I develope robust, secure, scalable and highly functional backends that adhere to the Software design principles.
                                 </Typography>
                                 {data.slides.filter(i => i.domain.includes("backend") || i.domain.includes("cloud") || i.domain.includes("database")).map(i => (
                                     <Tooltip key={i.name} title={i.name}>
@@ -149,7 +149,7 @@ export default function Home() {
                                     5 Star on CodeChef
                                 </Typography>
                                 <Typography gutterBottom variant="body2" color="text.secondary">
-                                    Became 5 Star on CodeChef with max rating 2028 within 6 contests. Among top 3000 competative programmers globally on the platform. 
+                                    Became 5 Star on CodeChef with max rating 2028 within 6 contests. Among top 3000 competative programmers globally on the platform.
                                 </Typography>
                                 {data.slides.filter(i => i.name === "CodeChef").map(i => (
                                     <Tooltip key={i.name} title={i.name}>

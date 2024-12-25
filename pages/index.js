@@ -6,6 +6,7 @@ import LinkedInIcon from '@material-ui/icons/LinkedIn';
 import Head from 'next/head';
 import { theme, urls } from '../public/toggles';
 import styles from '../styles/Home.module.css';
+import { Description } from '@material-ui/icons';
 
 export default function Home() {
   return (
@@ -34,7 +35,7 @@ export default function Home() {
           </Stack>
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={2} className={styles.links} >
             <Stack direction="row" spacing={2} >
-              <a target="_blank" rel='noreferrer' href={urls.resume}><Chip label="Resume" icon={<GetAppRoundedIcon />} onClick={() => { }} /></a>
+              <a target="_blank" rel='noreferrer' href={urls.resume}><Chip label="Resume" icon={<Description fontSize="small" />} onClick={() => { }} /></a>
               <a target="_blank" rel='noreferrer' href={urls.github}><Chip label="GitHub" icon={<GitHubIcon fontSize="small" />} onClick={() => { }} /></a>
             </Stack>
             <Stack direction="row" spacing={2} >
