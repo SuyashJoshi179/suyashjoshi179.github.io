@@ -10,7 +10,7 @@ import SpeedDial from '@mui/material/SpeedDial';
 import SpeedDialAction from '@mui/material/SpeedDialAction';
 import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import Head from 'next/head';
-import Image from "next/legacy/image";
+import Image from 'next/image';
 import React from 'react';
 import { theme } from '../../public/toggles';
 import styles from '../../styles/Education.module.css';

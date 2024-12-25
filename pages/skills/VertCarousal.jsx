@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import cn from "classnames";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 const VerticalCarousel = ({ data, dir, dur }) => {
   const [activeIndex, setActiveIndex] = useState(0);
