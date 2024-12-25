@@ -13,7 +13,7 @@ import Head from 'next/head';
 import { theme, urls } from '../../public/toggles';
 import projectStyles from '../../styles/Projects.module.css';
 import eduStyles from '../../styles/Education.module.css';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 
 export default function Home() {
     const actions = [
