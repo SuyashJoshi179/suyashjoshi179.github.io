@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import cn from "classnames";
 import Image from "next/image";
 
-const VerticalCarousel = ({ data, dir, dur }) => {
+const VerticalCarousel = ({ data = [], dir, dur }) => {
   const [activeIndex, setActiveIndex] = useState(0);
 
   // Used to determine which items appear above the active item
