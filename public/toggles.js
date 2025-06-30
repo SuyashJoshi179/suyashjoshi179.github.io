@@ -63,25 +63,3 @@ export const urls = {
     },
 };
 
-export const theme = createTheme({
-    palette: {
-        primary: {
-            main: '#007FFF',
-        },
-    },
-    typography: {
-        fontFamily: 'Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
-        h5: {
-            fontSize: '1.5rem',
-            fontWeight: 400,
-            lineHeight: 1.334,
-            letterSpacing: '0em',
-        },
-        body2: {
-            fontSize: '0.875rem',
-            fontWeight: 400,
-            lineHeight: 1.43,
-            letterSpacing: '0.01071em',
-        },
-    }
-});
