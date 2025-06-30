@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardActions, CardContent, CardMedia, Divider, Stack, ThemeProvider, Typography } from '@material-ui/core';
+import { Box, Button, Card, CardActions, CardContent, CardMedia, Divider, Stack, ThemeProvider, Typography } from '@mui/material';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import CloseIcon from '@mui/icons-material/Close';
 import HomeIcon from '@mui/icons-material/Home';
@@ -13,6 +13,7 @@ import Head from 'next/head';
 import Image from 'next/image';
 import { theme, urls } from '../../public/toggles';
 import eduStyles from '../../styles/Education.module.css';
+import NavigationSpeedDial from '../../components/NavigationSpeedDial';
 import projectStyles from '../../styles/Projects.module.css';
 
 export default function Home() {
@@ -25,43 +26,25 @@ export default function Home() {
     ];
 
     return (
-        <ThemeProvider theme={theme}>
-            <div className={projectStyles.container}>
+        <div className={projectStyles.container}>
                 <Head>
                     <title>Suyash Joshi | Experience</title>
                     <meta name="description" content="Suyash Joshi's Portfolio" />
                     <link rel="icon" href="/Logo.svg" />
-                    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+                    
                 </Head>
                 <div className={projectStyles.top}>
                     <Box className={projectStyles.title}>
                         Experience
                     </Box>
-                    <div>
-                        <SpeedDial
-                            ariaLabel="SpeedDial basic example"
-                            sx={{ position: 'absolute', top: 39, right: 16 }}
-                            icon={<SpeedDialIcon icon={<MenuOpenIcon />} openIcon={<CloseIcon />} />}
-                            direction="down"
-                            color="secondary"
-                        >
-                            {actions.map((action) => (
-                                <SpeedDialAction
-                                    key={action.name}
-                                    icon={action.icon}
-                                    tooltipTitle={action.name}
-                                    href={action.link}
-                                />
-                            ))}
-                        </SpeedDial>
-                    </div>
+                    <NavigationSpeedDial />
                 </div>
                 <main className={projectStyles.main}>
                     <Stack style={{ maxWidth: 760 }} className={eduStyles.cards}>
                         <Divider textAlign="left" sx={{ marginTop: "5vh", fontSize: "1.7rem" }} >Work Experience</Divider>
                         <Card className={eduStyles.card}>
                             <CardContent sx={{ order: 1, padding: 2, textAlign: "center" }} >
-                                <Image src='/Experience/mastercard.svg' alt="MasterCard Logo" width="200%" height="200%" loading="eager" unoptimized />
+                                <Image src='/Experience/mastercard.svg' alt="MasterCard Logo" width={200} height={200} loading="eager" />
                             </CardContent>
                             <CardContent className={eduStyles.cardcont} sx={{ order: 2 }} >
                                 <Typography gutterBottom variant="h5" component="div">
@@ -70,7 +53,7 @@ export default function Home() {
                                 <Typography variant="body2" color="text.primary">
                                     Software Engineer
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary">
+                                <Typography variant="body2" color="text.secondary" component="div" sx={{ fontSize: '1.25rem' }}>
                                     <div>Loyalty Rewards</div>
                                     <Stack justifyContent={{ xs: 'center', sm: 'space-between' }} spacing={2} className={eduStyles.edustats} direction={{ xs: 'column', sm: 'row' }}>
                                         <div>Full-time</div>
@@ -81,7 +64,7 @@ export default function Home() {
                         </Card>
                         <Card className={eduStyles.card}>
                             <CardContent sx={{ order: 1, padding: 2, textAlign: "center" }} >
-                                <Image src='/Experience/siemens.svg' alt="Siemens Logo" width="200%" height="200%" loading="eager" unoptimized />
+                                <Image src='/Experience/siemens.svg' alt="Siemens Logo" width={200} height={200} loading="eager" />
                             </CardContent>
                             <CardContent className={eduStyles.cardcont} sx={{ order: 2 }} >
                                 <Typography gutterBottom variant="h5" component="div">
@@ -90,7 +73,7 @@ export default function Home() {
                                 <Typography variant="body2" color="text.primary">
                                     Software Developement Intern
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary">
+                                <Typography variant="body2" color="text.secondary" component="div" sx={{ fontSize: '1.25rem' }}>
                                     <div>PLM Software</div>
                                     <Stack justifyContent={{ xs: 'center', sm: 'space-between' }} spacing={2} className={eduStyles.edustats} direction={{ xs: 'column', sm: 'row' }}>
                                         <div>Internship</div>
@@ -113,7 +96,7 @@ export default function Home() {
                                 <Typography gutterBottom variant="h5" component="div">
                                     Clean CSS
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary">
+                                <Typography variant="body2" color="text.secondary" component="div" sx={{ fontSize: '1.25rem' }}>
                                     clean-css is a fast and efficient CSS optimizer for Node.js platform and any modern browser. According to <a style={{ color: "#007FFF", textDecoration: "underline" }} href='http://goalsmashers.github.io/css-minification-benchmark/'>tests</a> it is one of the best available.
                                 </Typography>
                             </CardContent>
@@ -133,6 +116,5 @@ export default function Home() {
                     Made with ❤️ &nbsp;by Suyash Joshi.
                 </footer>
             </div>
-        </ThemeProvider>
     );
 }

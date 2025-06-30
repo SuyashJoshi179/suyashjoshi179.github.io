@@ -1,21 +1,20 @@
-import { Button, Chip, Stack, ThemeProvider } from '@material-ui/core';
-import { Description } from '@material-ui/icons';
-import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
-import GitHubIcon from '@material-ui/icons/GitHub';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import { Button, Chip, Stack, ThemeProvider } from '@mui/material';
+import { Description } from '@mui/icons-material';
+import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
+import GitHubIcon from '@mui/icons-material/GitHub';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Head from 'next/head';
 import { theme, urls } from '../public/toggles';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
   return (
-    <ThemeProvider theme={theme}>
-      <div className={styles.container}>
+    <div className={styles.container}>
         <Head>
           <title>Suyash Joshi | Portfolio</title>
           <meta name="description" content="Suyash Joshi's Portfolio" />
           <link rel="icon" href="/Logo.svg" />
-          <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+          
         </Head>
 
         <main className={styles.main}>
@@ -49,6 +48,5 @@ export default function Home() {
           Made with ❤️ &nbsp;by Suyash Joshi.
         </footer>
       </div>
-    </ThemeProvider>
   )
 }

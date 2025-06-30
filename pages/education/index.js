@@ -1,4 +1,4 @@
-import { Box, Card, CardContent, Divider, Link, Stack, ThemeProvider, Typography } from '@material-ui/core';
+import { Box, Card, CardContent, Divider, Link, Stack, ThemeProvider, Typography } from '@mui/material';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import CloseIcon from '@mui/icons-material/Close';
 import HomeIcon from '@mui/icons-material/Home';
@@ -12,6 +12,7 @@ import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import Head from 'next/head';
 import Image from 'next/image';
 import React from 'react';
+import NavigationSpeedDial from '../../components/NavigationSpeedDial';
 import { theme } from '../../public/toggles';
 import styles from '../../styles/Education.module.css';
 
@@ -25,43 +26,25 @@ export default function Home() {
     ];
 
     return (
-        <ThemeProvider theme={theme}>
-            <div className={styles.container}>
+        <div className={styles.container}>
                 <Head>
                     <title>Suyash Joshi | Education</title>
                     <meta name="description" content="Suyash Joshi's Portfolio" />
                     <link rel="icon" href="/Logo.svg" />
-                    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+                    
                 </Head>
                 <div className={styles.top}>
                     <Box className={styles.title}>
                         Education
                     </Box>
-                    <div>
-                        <SpeedDial
-                            ariaLabel="SpeedDial basic example"
-                            sx={{ position: 'absolute', top: 39, right: 16 }}
-                            icon={<SpeedDialIcon icon={<MenuOpenIcon />} openIcon={<CloseIcon />} />}
-                            direction="down"
-                            color="secondary"
-                        >
-                            {actions.map((action) => (
-                                <SpeedDialAction
-                                    key={action.name}
-                                    icon={action.icon}
-                                    tooltipTitle={action.name}
-                                    href={action.link}
-                                />
-                            ))}
-                        </SpeedDial>
-                    </div>
+                    <NavigationSpeedDial />
                 </div>
                 <main className={styles.main} style={{ overflow: "hidden" }}>
                     <Stack className={styles.cards}>
                         <Divider textAlign="left" sx={{ marginTop: "5vh", fontSize: "1.7rem" }} >Academics</Divider>
                         <Card className={styles.card}>
                             <CardContent sx={{ order: 1, padding: 2, textAlign: "center" }} >
-                                <Image src='/Education/pict.png' alt="PICT Logo" width="200%" height="200%" loading="eager" unoptimized />
+                                <Image src='/Education/pict.png' alt="PICT Logo" width={200} height={200} loading="eager" />
                             </CardContent>
                             <CardContent className={styles.cardcont} sx={{ order: 2 }} >
                                 <Typography gutterBottom variant="h5" component="div">
@@ -70,7 +53,7 @@ export default function Home() {
                                 <Typography variant="body2" color="text.primary">
                                     Pune Institute of Computer Technology, Pune
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary">
+                                <Typography variant="body2" color="text.secondary" component="div" sx={{ fontSize: '1.25rem' }}>
                                     <div>Savitribai Phule Pune University</div>
                                     <Stack justifyContent={{ xs: 'center', sm: 'space-between' }} spacing={2} className={styles.edustats} direction={{ xs: 'column', sm: 'row' }}>
                                         <div>CGPA: 9.23/10</div>
@@ -81,7 +64,7 @@ export default function Home() {
                         </Card>
                         <Card className={styles.card}>
                             <CardContent sx={{ order: 1, padding: 4, textAlign: "center" }} >
-                                <Image src='/Education/dscl.png' alt="DSCL Logo" width="170%" height="170%" loading="eager" unoptimized />
+                                <Image src='/Education/dscl.png' alt="DSCL Logo" width={170} height={170} loading="eager" />
                             </CardContent>
                             <CardContent className={styles.cardcont} sx={{ order: 2 }} >
                                 <Typography gutterBottom variant="h5" component="div">
@@ -90,7 +73,7 @@ export default function Home() {
                                 <Typography variant="body2" color="text.primary">
                                     Dayanand Science Junior College, Latur
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary">
+                                <Typography variant="body2" color="text.secondary" component="div" sx={{ fontSize: '1.25rem' }}>
                                     <div>Maharashtra Board</div>
                                     <Stack justifyContent={{ xs: 'center', sm: 'space-between' }} spacing={2} className={styles.edustats} direction={{ xs: 'column', sm: 'row' }}>
                                         <div>HSC Percentage: 89.23%</div>
@@ -101,7 +84,7 @@ export default function Home() {
                         </Card>
                         <Card className={styles.card}>
                             <CardContent sx={{ order: 1, padding: 4, textAlign: "center" }} >
-                                <Image src='/Education/bsps.png' alt="Keshavaraj Logo" width="170%" height="170%" loading="eager" unoptimized />
+                                <Image src='/Education/bsps.png' alt="Keshavaraj Logo" width={170} height={170} loading="eager" />
                             </CardContent>
                             <CardContent className={styles.cardcont} sx={{ order: 2 }} >
                                 <Typography gutterBottom variant="h5" component="div">
@@ -110,7 +93,7 @@ export default function Home() {
                                 <Typography variant="body2" color="text.primary">
                                     Shri Keshavaraj Vidyalaya, Latur
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary">
+                                <Typography variant="body2" color="text.secondary" component="div" sx={{ fontSize: '1.25rem' }}>
                                     <div>Maharashtra Board</div>
                                     <Stack justifyContent={{ xs: 'center', sm: 'space-between' }} spacing={2} className={styles.edustats} direction={{ xs: 'column', sm: 'row' }}>
                                         <div>SSC Percentage: 86.60%</div>
@@ -124,7 +107,7 @@ export default function Home() {
                         <Divider textAlign="left" sx={{ marginTop: "5vh", fontSize: "1.7rem" }} >Courses</Divider>
                         <Card className={styles.card}>
                             <CardContent sx={{ order: 1, padding: 2, textAlign: "center" }} >
-                                <Image src='/Education/stanford.svg' alt="Stanford Logo" width="200%" height="200%" loading="eager" unoptimized />
+                                <Image src='/Education/stanford.svg' alt="Stanford Logo" width={200} height={200} loading="eager" />
                             </CardContent>
                             <CardContent className={styles.cardcont} sx={{ order: 2 }} >
                                 <Typography gutterBottom variant="h5" component="div">
@@ -133,7 +116,7 @@ export default function Home() {
                                 <Typography variant="body2" color="text.primary">
                                     Andrew Ng, Stanford Online
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary">
+                                <Typography variant="body2" color="text.secondary" component="div" sx={{ fontSize: '1.25rem' }}>
                                     <div>Coursera</div>
                                     <Stack justifyContent={{ xs: 'center', sm: 'space-between' }} spacing={2} className={styles.edustats} direction={{ xs: 'column', sm: 'row' }}>
                                         <div>26 Apr 2020</div>
@@ -144,7 +127,7 @@ export default function Home() {
                         </Card>
                         <Card className={styles.card}>
                             <CardContent sx={{ order: 1, padding: 2, textAlign: "center" }} >
-                                <Image src='/Education/Deeplearning.png' alt="DeepLearning.ai Logo" width="200%" height="200%" loading="eager" unoptimized />
+                                <Image src='/Education/Deeplearning.png' alt="DeepLearning.ai Logo" width={200} height={200} loading="eager" />
                             </CardContent>
                             <CardContent className={styles.cardcont} sx={{ order: 2 }} >
                                 <Typography gutterBottom variant="h5" component="div">
@@ -153,7 +136,7 @@ export default function Home() {
                                 <Typography variant="body2" color="text.primary">
                                     DeepLearning.AI
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary">
+                                <Typography variant="body2" color="text.secondary" component="div" sx={{ fontSize: '1.25rem' }}>
                                     <div>Coursera</div>
                                     <Stack justifyContent={{ xs: 'center', sm: 'space-between' }} spacing={2} className={styles.edustats} direction={{ xs: 'column', sm: 'row' }}>
                                         <div>3 Jul 2020</div>
@@ -164,7 +147,7 @@ export default function Home() {
                         </Card>
                         <Card className={styles.card}>
                             <CardContent sx={{ order: 1, padding: 0, textAlign: "center" }} >
-                                <Image src='/Education/johnshopkins.svg' alt="Johns Hopkins Logo" width="230%" height="230%" loading="eager" unoptimized />
+                                <Image src='/Education/johnshopkins.svg' alt="Johns Hopkins Logo" width={230} height={230} loading="eager" />
                             </CardContent>
                             <CardContent className={styles.cardcont} sx={{ order: 2 }} >
                                 <Typography gutterBottom variant="h5" component="div">
@@ -173,7 +156,7 @@ export default function Home() {
                                 <Typography variant="body2" color="text.primary">
                                     Yaakov Chaikin, Johns Hopkins University
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary">
+                                <Typography variant="body2" color="text.secondary" component="div" sx={{ fontSize: '1.25rem' }}>
                                     <div>Coursera</div>
                                     <Stack justifyContent={{ xs: 'center', sm: 'space-between' }} spacing={2} className={styles.edustats} direction={{ xs: 'column', sm: 'row' }}>
                                         <div>21 Jul 2020</div>
@@ -184,7 +167,7 @@ export default function Home() {
                         </Card>
                         <Card className={styles.card}>
                             <CardContent sx={{ order: 1, padding: 0, textAlign: "center" }} >
-                                <Image src='/Education/hongkong.svg' alt="Hong Kong University Logo" width="230%" height="230%" loading="eager" unoptimized />
+                                <Image src='/Education/hongkong.svg' alt="Hong Kong University Logo" width={230} height={230} loading="eager" />
                             </CardContent>
                             <CardContent className={styles.cardcont} sx={{ order: 2 }} >
                                 <Typography gutterBottom variant="h5" component="div">
@@ -193,7 +176,7 @@ export default function Home() {
                                 <Typography variant="body2" color="text.primary">
                                     Jogesh K. Muppala, The Hong Kong University of Science and Technology
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary">
+                                <Typography variant="body2" color="text.secondary" component="div" sx={{ fontSize: '1.25rem' }}>
                                     <div>Coursera</div>
                                     <Stack justifyContent={{ xs: 'center', sm: 'space-between' }} spacing={2} className={styles.edustats} direction={{ xs: 'column', sm: 'row' }}>
                                         <div>30 Dec 2020</div>
@@ -204,7 +187,7 @@ export default function Home() {
                         </Card>
                         <Card className={styles.card}>
                             <CardContent sx={{ order: 1, padding: 2, textAlign: "center" }} >
-                                <Image src='/Education/pict.png' alt="PICT Logo" width="200%" height="200%" loading="eager" unoptimized />
+                                <Image src='/Education/pict.png' alt="PICT Logo" width={200} height={200} loading="eager" />
                             </CardContent>
                             <CardContent className={styles.cardcont} sx={{ order: 2 }} >
                                 <Typography gutterBottom variant="h5" component="div">
@@ -213,7 +196,7 @@ export default function Home() {
                                 <Typography variant="body2" color="text.primary">
                                     Blockchain and Distributed Systems Security Lab, PICT Pune
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary">
+                                <Typography variant="body2" color="text.secondary" component="div" sx={{ fontSize: '1.25rem' }}>
                                     <div>Online Training Program, PICT</div>
                                     <Stack justifyContent={{ xs: 'center', sm: 'space-between' }} spacing={2} className={styles.edustats} direction={{ xs: 'column', sm: 'row' }}>
                                         <div>10 Jul 2021</div>
@@ -224,7 +207,7 @@ export default function Home() {
                         </Card>
                         <Card className={styles.card}>
                             <CardContent sx={{ order: 1, padding: 2, marginTop: 8, marginBottom: 8, textAlign: "center" }} >
-                                <Image src='/Education/rinex.png' alt="Rinex.ai Logo" width="200%" height="60%" loading="eager" unoptimized />
+                                <Image src='/Education/rinex.png' alt="Rinex.ai Logo" width={200} height={60} loading="eager" />
                             </CardContent>
                             <CardContent className={styles.cardcont} sx={{ order: 2 }} >
                                 <Typography gutterBottom variant="h5" component="div">
@@ -233,7 +216,7 @@ export default function Home() {
                                 <Typography variant="body2" color="text.primary">
                                     Rinex.ai
                                 </Typography>
-                                <Typography variant="body2" color="text.secondary">
+                                <Typography variant="body2" color="text.secondary" component="div" sx={{ fontSize: '1.25rem' }}>
                                     <div>Entrepreneurship Cell, IIT Kharagpur</div>
                                     <Stack justifyContent={{ xs: 'center', sm: 'space-between' }} spacing={2} className={styles.edustats} direction={{ xs: 'column', sm: 'row' }}>
                                         <div>30 Sep 2021</div>
@@ -249,6 +232,5 @@ export default function Home() {
                     Made with ❤️ &nbsp;by Suyash Joshi.
                 </footer>
             </div>
-        </ThemeProvider>
     );
 }

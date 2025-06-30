@@ -1,4 +1,4 @@
-import { Box, Button, Card, CardActions, CardContent, CardMedia, Stack, ThemeProvider, Typography } from '@material-ui/core';
+import { Box, Button, Card, CardActions, CardContent, CardMedia, Stack, ThemeProvider, Typography } from '@mui/material';
 import AccountTreeIcon from '@mui/icons-material/AccountTree';
 import CloseIcon from '@mui/icons-material/Close';
 import HomeIcon from '@mui/icons-material/Home';
@@ -12,6 +12,7 @@ import SpeedDialIcon from '@mui/material/SpeedDialIcon';
 import Head from 'next/head';
 import { theme, urls } from '../../public/toggles';
 import styles from '../../styles/Projects.module.css';
+import NavigationSpeedDial from '../../components/NavigationSpeedDial';
 
 export default function Home() {
     const actions = [
@@ -23,36 +24,18 @@ export default function Home() {
     ];
 
     return (
-        <ThemeProvider theme={theme}>
-            <div className={styles.container}>
+        <div className={styles.container}>
                 <Head>
                     <title>Suyash Joshi | Projects</title>
                     <meta name="description" content="Suyash Joshi's Portfolio" />
                     <link rel="icon" href="/Logo.svg" />
-                    <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
+                    
                 </Head>
                 <div className={styles.top}>
                     <Box className={styles.title}>
                         Projects
                     </Box>
-                    <div>
-                        <SpeedDial
-                            ariaLabel="SpeedDial basic example"
-                            sx={{ position: 'absolute', top: 39, right: 16 }}
-                            icon={<SpeedDialIcon icon={<MenuOpenIcon />} openIcon={<CloseIcon />} />}
-                            direction="down"
-                            color="secondary"
-                        >
-                            {actions.map((action) => (
-                                <SpeedDialAction
-                                    key={action.name}
-                                    icon={action.icon}
-                                    tooltipTitle={action.name}
-                                    href={action.link}
-                                />
-                            ))}
-                        </SpeedDial>
-                    </div>
+                    <NavigationSpeedDial />
                 </div>
                 <main className={styles.main}>
                     <Stack>
@@ -148,6 +131,5 @@ export default function Home() {
                     Made with ❤️ &nbsp;by Suyash Joshi.
                 </footer>
             </div>
-        </ThemeProvider>
     );
 }

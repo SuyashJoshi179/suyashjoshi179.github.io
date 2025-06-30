@@ -1,4 +1,4 @@
-import { createTheme } from '@material-ui/core';
+import { createTheme } from '@mui/material';
 
 export const urls = {
     resume: 'https://drive.google.com/file/d/19SDg_eb-noc95C7uZ_hLTPd9UYMVrP7U/view?usp=sharing',
@@ -71,5 +71,17 @@ export const theme = createTheme({
     },
     typography: {
         fontFamily: 'Poppins, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif',
+        h5: {
+            fontSize: '1.5rem',
+            fontWeight: 400,
+            lineHeight: 1.334,
+            letterSpacing: '0em',
+        },
+        body2: {
+            fontSize: '0.875rem',
+            fontWeight: 400,
+            lineHeight: 1.43,
+            letterSpacing: '0.01071em',
+        },
     }
 });

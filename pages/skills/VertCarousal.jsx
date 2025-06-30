@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useCallback, useEffect, useState } from "react";
 import PropTypes from "prop-types";
 import cn from "classnames";
 import Image from "next/image";
@@ -42,7 +42,7 @@ const VerticalCarousel = ({ data, dir, dur }) => {
     }
   };
 
-  const handleClick = (direction) => {
+  const handleClick = useCallback((direction) => {
     setActiveIndex((prevIndex) => {
       if (direction === "next") {
         if (prevIndex + 1 > data.length - 1) {
@@ -57,20 +57,19 @@ const VerticalCarousel = ({ data, dir, dur }) => {
 
       return prevIndex - 1;
     });
-  };
-
-  const [loop, setLoop] = useState();
+  }, [data.length]);
 
   useEffect(() => {
-    setTimeout(() => {
+    const timeout = setTimeout(() => {
         handleClick(dir);
-        setLoop(setInterval(handleClick, 4000, dir));
+        const loop = setInterval(() => handleClick(dir), 4000);
+        return () => clearInterval(loop);
     }, dur);
   
     return () => {
-      clearInterval(loop);
+      clearTimeout(timeout);
     }
-  }, [])
+  }, [dir, dur, handleClick])
 
   return (
     <div className="container">
@@ -94,7 +93,7 @@ const VerticalCarousel = ({ data, dir, dur }) => {
                       borderColor: item.color
                     }}
                   >
-                    <Image src={item.url} alt={item.name} width="100%" height={70} loading="eager" unoptimized />
+                    <Image src={item.url} alt={item.name} width={100} height={70} loading="eager" />
                     <div style={{ fontSize: "0.9rem", color: item.color }}>{item.name}</div>
                   </button>
                 ))}
