@@ -1,13 +1,15 @@
-import { Button, Chip, Stack, ThemeProvider } from '@mui/material';
+import { Button, Chip, Stack, useTheme } from '@mui/material';
 import { Description } from '@mui/icons-material';
 import AlternateEmailIcon from '@mui/icons-material/AlternateEmail';
 import GitHubIcon from '@mui/icons-material/GitHub';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Head from 'next/head';
-import { theme, urls } from '../public/toggles';
+import { urls } from '../public/toggles';
 import styles from '../styles/Home.module.css';
 
 export default function Home() {
+  const theme = useTheme();
+
   return (
     <div className={styles.container}>
         <Head>
@@ -44,9 +46,21 @@ export default function Home() {
 
         </main>
 
-        <footer className={styles.footer}>
+        <footer
+          style={{
+            width: '100%',
+            height: '50px',
+            borderTop: `1px solid ${theme.palette.divider}`,
+            display: 'flex',
+            justifyContent: 'center',
+            alignItems: 'center',
+            fontSize: 'large',
+            backgroundColor: theme.palette.background.paper,
+            color: theme.palette.text.primary,
+          }}
+        >
           Made with ❤️ &nbsp;by Suyash Joshi.
         </footer>
       </div>
-  )
+  );
 }
