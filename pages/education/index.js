@@ -60,6 +60,26 @@ export default function Home() {
                     <Stack className={styles.cards}>
                         <Divider textAlign="left" sx={{ marginTop: "5vh", fontSize: "1.7rem" }} >Academics</Divider>
                         <Card className={styles.card}>
+                            <CardContent sx={{ order: 1, padding: '3rem 2rem', textAlign: "center" }} >
+                                <Image src='/Education/sbu.png' alt="Stony Brook University Logo" width="170%" height="140%" loading="eager" unoptimized />
+                            </CardContent>
+                            <CardContent className={styles.cardcont} sx={{ order: 2 }} >
+                                <Typography gutterBottom variant="h5" component="div">
+                                    Master of Science in Computer Science
+                                </Typography>
+                                <Typography variant="body2" color="text.primary">
+                                    Department of Computer Science
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                    <div>Stony Brook University, New York</div>
+                                    <Stack justifyContent={{ xs: 'center', sm: 'space-between' }} spacing={2} className={styles.edustats} direction={{ xs: 'column', sm: 'row' }}>
+                                        <div>GPA: In Progress</div>
+                                        <div>Aug 2025 - Present</div>
+                                    </Stack>
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                        <Card className={styles.card}>
                             <CardContent sx={{ order: 1, padding: 2, textAlign: "center" }} >
                                 <Image src='/Education/pict.png' alt="PICT Logo" width="200%" height="200%" loading="eager" unoptimized />
                             </CardContent>
@@ -74,7 +94,7 @@ export default function Home() {
                                     <div>Savitribai Phule Pune University</div>
                                     <Stack justifyContent={{ xs: 'center', sm: 'space-between' }} spacing={2} className={styles.edustats} direction={{ xs: 'column', sm: 'row' }}>
                                         <div>CGPA: 9.23/10</div>
-                                        <div>2019 - 2023</div>
+                                        <div>July 2019 - May 2023</div>
                                     </Stack>
                                 </Typography>
                             </CardContent>
@@ -94,7 +114,7 @@ export default function Home() {
                                     <div>Maharashtra Board</div>
                                     <Stack justifyContent={{ xs: 'center', sm: 'space-between' }} spacing={2} className={styles.edustats} direction={{ xs: 'column', sm: 'row' }}>
                                         <div>HSC Percentage: 89.23%</div>
-                                        <div>2017 - 2019</div>
+                                        <div>Jun 2017 - Jun 2019</div>
                                     </Stack>
                                 </Typography>
                             </CardContent>
@@ -114,7 +134,7 @@ export default function Home() {
                                     <div>Maharashtra Board</div>
                                     <Stack justifyContent={{ xs: 'center', sm: 'space-between' }} spacing={2} className={styles.edustats} direction={{ xs: 'column', sm: 'row' }}>
                                         <div>SSC Percentage: 86.60%</div>
-                                        <div>2007 - 2017</div>
+                                        <div>Jun 2007 - May 2017</div>
                                     </Stack>
                                 </Typography>
                             </CardContent>

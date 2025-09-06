@@ -74,7 +74,7 @@ export default function Home() {
                                     <div>Loyalty Rewards</div>
                                     <Stack justifyContent={{ xs: 'center', sm: 'space-between' }} spacing={2} className={eduStyles.edustats} direction={{ xs: 'column', sm: 'row' }}>
                                         <div>Full-time</div>
-                                        <div>June 2023 - Present</div>
+                                        <div>June 2023 - July 2025</div>
                                     </Stack>
                                 </Typography>
                             </CardContent>
