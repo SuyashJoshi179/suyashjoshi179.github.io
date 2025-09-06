@@ -24,7 +24,7 @@ export default function Home() {
           </div>
 
           <p className={styles.description}>
-            A Full Stack developer and Problem Solver
+            A Software Engineer and Problem Solver
           </p>
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={3}>
             <Button variant="outlined" href='experience' >EXPERIENCE</Button>
