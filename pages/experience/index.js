@@ -61,6 +61,26 @@ export default function Home() {
                         <Divider textAlign="left" sx={{ marginTop: "5vh", fontSize: "1.7rem" }} >Work Experience</Divider>
                         <Card className={eduStyles.card}>
                             <CardContent sx={{ order: 1, padding: 2, textAlign: "center" }} >
+                                <Image src='/Experience/linkedin.svg' alt="LinkedIn Logo" width="200%" height="200%" loading="eager" unoptimized />
+                            </CardContent>
+                            <CardContent className={eduStyles.cardcont} sx={{ order: 2 }} >
+                                <Typography gutterBottom variant="h5" component="div">
+                                    LinkedIn
+                                </Typography>
+                                <Typography variant="body2" color="text.primary">
+                                    Systems &amp; Infrastructure Engineer Intern
+                                </Typography>
+                                <Typography variant="body2" color="text.secondary">
+                                    <div>Compute Infrastructure &mdash; GPU scheduling &amp; Kubernetes ML infra</div>
+                                    <Stack justifyContent={{ xs: 'center', sm: 'space-between' }} spacing={2} className={eduStyles.edustats} direction={{ xs: 'column', sm: 'row' }}>
+                                        <div>Internship</div>
+                                        <div>May 2026 - Present</div>
+                                    </Stack>
+                                </Typography>
+                            </CardContent>
+                        </Card>
+                        <Card className={eduStyles.card}>
+                            <CardContent sx={{ order: 1, padding: 2, textAlign: "center" }} >
                                 <Image src='/Experience/mastercard.svg' alt="MasterCard Logo" width="200%" height="200%" loading="eager" unoptimized />
                             </CardContent>
                             <CardContent className={eduStyles.cardcont} sx={{ order: 2 }} >
@@ -68,7 +88,7 @@ export default function Home() {
                                     MasterCard
                                 </Typography>
                                 <Typography variant="body2" color="text.primary">
-                                    Software Engineer
+                                    Software Engineer II
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
                                     <div>Loyalty Rewards</div>
@@ -88,7 +108,7 @@ export default function Home() {
                                     Siemens DISW
                                 </Typography>
                                 <Typography variant="body2" color="text.primary">
-                                    Software Developement Intern
+                                    Software Development Intern
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
                                     <div>PLM Software</div>
