@@ -12,8 +12,8 @@ export default function Home() {
     <ThemeProvider theme={theme}>
       <div className={styles.container}>
         <Head>
-          <title>Suyash Joshi | Portfolio</title>
-          <meta name="description" content="Suyash Joshi's Portfolio" />
+          <title>Suyash Joshi | ML-Infrastructure Engineer</title>
+          <meta name="description" content="Suyash Joshi — Systems & ML-Infrastructure Engineer. GPU scheduling, Kubernetes ML infrastructure, and inference/training efficiency." />
           <link rel="icon" href="/Logo.svg" />
           <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons" />
         </Head>
@@ -24,7 +24,7 @@ export default function Home() {
           </div>
 
           <p className={styles.description}>
-            A Software Engineer and Problem Solver
+            Systems &amp; ML-Infrastructure Engineer
           </p>
           <Stack direction={{ xs: 'column', sm: 'row' }} spacing={3}>
             <Button variant="outlined" href='experience' >EXPERIENCE</Button>
