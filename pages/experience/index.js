@@ -71,7 +71,7 @@ export default function Home() {
                                     Systems &amp; Infrastructure Engineer Intern
                                 </Typography>
                                 <Typography variant="body2" color="text.secondary">
-                                    <div>Compute Infrastructure &mdash; GPU scheduling &amp; Kubernetes ML infra</div>
+                                    <div>Compute Infrastructure: GPU scheduling &amp; Kubernetes ML infra</div>
                                     <Stack justifyContent={{ xs: 'center', sm: 'space-between' }} spacing={2} className={eduStyles.edustats} direction={{ xs: 'column', sm: 'row' }}>
                                         <div>Internship</div>
                                         <div>May 2026 - Present</div>
